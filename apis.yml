@@ -1,7 +1,25 @@
 aid: jelli
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jelli.png
 name: Jelli
-description: Jelli is a company surfaced as a portfolio company of battery-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Jelli was a programmatic advertising technology company focused on terrestrial and
+  broadcast radio, building a real-time platform that let advertisers buy and manage radio spots
+  programmatically across broadcast station inventory. Backed by Battery Ventures (among other
+  investors), Jelli was acquired by iHeartMedia in 2016 and its technology went on to power
+  programmatic and automated audio advertising. The independent Jelli brand is now defunct - the
+  jelli.com domain 301-redirects to tritondigital.com, and no Jelli-branded developer portal,
+  API reference, or public API host remains. This profile is retained as a portfolio-lead record;
+  the enrichment pipeline found no live Jelli developer or API surface to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/jelli/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +27,32 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-acquired
+x-acquired-by: iheartmedia
+x-domain-redirect: https://tritondigital.com/
+x-enrichment-note: 'No live developer/API surface. jelli.com and www.jelli.com 301-redirect to
+  tritondigital.com; developer.jelli.com has no DNS; api.jelli.com returns HTTP 404. Probed
+  2026-07-19. No artifacts created (no-fabrication).'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Advertising
+- AdTech
+- Programmatic Advertising
+- Radio
+- Broadcast
+- Audio
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
