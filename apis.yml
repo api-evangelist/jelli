@@ -33,7 +33,7 @@ x-domain-redirect: https://tritondigital.com/
 x-enrichment-note: 'No live developer/API surface. jelli.com and www.jelli.com 301-redirect to
   tritondigital.com; developer.jelli.com has no DNS; api.jelli.com returns HTTP 404. Probed
   2026-07-19. No artifacts created (no-fabrication).'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
